@@ -1,379 +1,693 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon-16x16.png"
+      type="image/x-icon" />
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+      crossorigin="" />
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== FONT AWESOME ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
-      <title>Responsive Resume CV</title>
-   </head>
-   <body>
-      <div class="resume container">
-         <!--==================== HEADER ====================-->
-         <header class="header" id="header">
-            <nav class="nav container">
-               <a href="#" class="nav__logo">Anne</a>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-               <div class="nav__menu">
-                  <ul class="nav__list">
-                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                           <i class="ri-home-line"></i>
-                        </a>
-                     </li>
+    <title>Amine CV</title>
+  </head>
+  <body>
+    <div class="resume container">
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+        <nav class="nav container">
+          <a href="#" id="language-switcher">
+            EN
+            <i class="fa-solid fa-globe"></i>
+          </a>
 
-                     <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                           <i class="ri-user-line"></i>
-                        </a>
-                     </li>
-                     
-                     <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                           <i class="ri-file-list-line"></i>
-                        </a>
-                     </li>
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link active-link">
+                  <i class="ri-home-line"></i>
+                </a>
+              </li>
 
-                     <li class="nav__item">
-                        <a href="#education" class="nav__link">
-                           <i class="ri-book-line"></i>
-                        </a>
-                     </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">
+                  <i class="ri-user-line"></i>
+                </a>
+              </li>
 
-                     <li class="nav__item">
-                        <a href="#work" class="nav__link">
-                           <i class="ri-briefcase-3-line"></i>
-                        </a>
-                     </li>
-                  </ul>
-               </div>
+              <li class="nav__item">
+                <a href="#skills" class="nav__link">
+                  <i class="ri-file-list-line"></i>
+                </a>
+              </li>
 
-               <!-- theme button -->
-               <i class="ri-moon-line change-theme" id="theme-button"></i>
-            </nav>
-         </header>
-   
-         <!--==================== MAIN ====================-->
-         <main class="resume__main">
-            <!--==================== HOME ====================-->
-            <section class="home" id="home">
-               <div class="home__container grid">
-                  <h1 class="home__name">
-                     HELLO, I'M <br>
-                     ANNE EVONE
-                  </h1>
+              <li class="nav__item">
+                <a href="#education" class="nav__link">
+                  <i class="ri-book-line"></i>
+                </a>
+              </li>
 
-                  <div class="home__blob">
-                     <div class="home__perfil">
-                        <img src="assets/img/perfil.png" alt="Home image" class="home__img">
-                     </div>
+              <li class="nav__item">
+                <a href="#work" class="nav__link">
+                  <i class="ri-briefcase-3-line"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-                     <svg class="home__star-1" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M25 0L31.7523 18.2477L50 25L31.7523 31.7523L25 
-                        50L18.2477 31.7523L0 25L18.2477 18.2477L25 0Z" />
-                     </svg>
+          <!-- theme button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+        </nav>
+      </header>
 
-                     <svg class="home__star-2" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M25 0L31.7523 18.2477L50 25L31.7523 31.7523L25 
-                        50L18.2477 31.7523L0 25L18.2477 18.2477L25 0Z" />
-                     </svg>
-                  </div>
+      <!--==================== MAIN ====================-->
+      <main class="resume__main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+          <div class="home__container grid">
+            <h1 class="home__name">
+              Mr. ZRAIB
+              <br />
+              Mohammed
+            </h1>
 
-                  <h2 class="home__profession">
-                     FRONTEND <br>
-                     DEVELOPER
+            <div class="home__blob">
+              <div class="home__perfil">
+                <img
+                  src="assets/img/boudrika.png"
+                  alt="Home image"
+                  class="home__img" />
+              </div>
+
+              <svg
+                class="home__square-1"
+                viewBox="0 0 50 50"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect
+                  x="5"
+                  y="5"
+                  width="40"
+                  height="40"
+                  fill="none"
+                  stroke="black"
+                  stroke-width="2" />
+              </svg>
+
+              <svg
+                class="home__square-2"
+                viewBox="0 0 50 50"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect
+                  x="5"
+                  y="5"
+                  width="40"
+                  height="40"
+                  fill="none"
+                  stroke="black"
+                  stroke-width="2" />
+              </svg>
+            </div>
+
+            <h2 class="home__profession">
+              Ingénieur d'Etat En Génie Informatique |
+              <br />
+              Ingénieur en recherche et développement des systèmes Drones.
+            </h2>
+          </div>
+        </section>
+        <!--==================== ABOUT ====================-->
+        <section class="section about" id="about">
+          <h2 class="section__title">PERSONAL INFO</h2>
+
+          <div class="about__container grid">
+            <div class="about__container-left">
+              <p>
+                <i class="ri-home-3-line"></i>
+                36 Years old, married
+              </p>
+              <p>
+                <i class="ri-user-heart-line"></i>
+                Ennakhil A4, N° 08, cité ALEM, Aéroport Benslimane, Benslimane
+              </p>
+              <p>
+                <i class="ri-phone-line"></i>
+                +212 6.00.58.79.23
+              </p>
+              <p>
+                <i class="ri-mail-line"></i>
+                zraib.med@gmail.com
+              </p>
+            </div>
+            <div class="about__container-right">
+              <a
+                href="./assets/pdf/Cv-Mohammed-zraib.pdf"
+                download=""
+                class="about__button">
+                Download CV
+                <i class="ri-download-line"></i>
+              </a>
+
+              <ul class="about__social">
+                <li>
+                  <a
+                    href="https://wa.me/212600587923"
+                    class="about__social-link"
+                    target="_blank">
+                    <i class="ri-whatsapp-line"></i>
+                    WhatsApp
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=zraib.med@gmail.com"
+                    class="about__social-link"
+                    target="_blank">
+                    <i class="ri-mail-line"></i>
+                    Gmail
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/mohammed-zraib"
+                    class="about__social-link"
+                    target="_blank">
+                    <i class="ri-linkedin-box-line"></i>
+                    LinkedIn
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <div class="main__container">
+          <div class="resume__left">
+            <!--==================== WORK ====================-->
+            <section class="work section" id="work">
+              <h2 class="section__title">WORK EXPERIENCE</h2>
+
+              <div class="work__container grid">
+                <div>
+                  <h2 class="resume__title">
+                    <i class="ri-arrow-drop-right-line"></i>
+                    Responsable de la maintenance des systèmes embarqués
                   </h2>
-               </div>
+
+                  <div class="resume__data">
+                    <span>
+                      <i class="ri-map-pin-line"></i>
+                      Benslimane | 2014 - Present
+                    </span>
+                    <span
+                      class="resume__button-link"
+                      onclick="toggleList('list1', 'icon1')">
+                      Réalisations
+                      <i
+                        id="icon1"
+                        class="ri-arrow-down-double-line resume__button-link"></i>
+                    </span>
+                    <ul id="list1" class="resume__data-ul">
+                      <li class="resume__data-li">
+                        Reparation des systèmes embarqués de l'unité et
+                        protection des systèmes d'information et de
+                        communication.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <h2 class="resume__title">
+                    <i class="ri-arrow-drop-right-line"></i>
+                    Conception, développement et réalisation d'un VTOL.
+                  </h2>
+
+                  <div class="resume__data">
+                    <span>
+                      <i class="ri-map-pin-line"></i>
+                      UM6P | Université Mohammed VI Polytechnique |
+                      <br />
+
+                      Bengrir - Maroc| 12/2020 - Present
+                    </span>
+                    <span
+                      class="resume__button-link"
+                      onclick="toggleList('list2', 'icon2')">
+                      Réalisations
+                      <i id="icon2" class="ri-arrow-down-double-line"></i>
+                    </span>
+                    <ul id="list2" class="resume__data-ul">
+                      <li class="resume__data-li">
+                        Développement des modes de camera, géolocalisation en
+                        python compatible ROS. Test et validation sur
+                        environnement de simulation GAZEBO .
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <h2 class="resume__title">
+                    <i class="ri-arrow-drop-right-line"></i>
+                    Développement d’extension de processus dans l’ERP Dynamics
+                    365 F&O (Projet de fin d'études)
+                  </h2>
+
+                  <div class="resume__data">
+                    <span>
+                      <i class="ri-map-pin-line"></i>
+                      AVANADE France | Lyon, France | 03/2021 - 09/2021
+                    </span>
+                    <span
+                      class="resume__button-link"
+                      onclick="toggleList('list3', 'icon3')">
+                      Réalisations
+                      <i
+                        id="icon3"
+                        class="ri-arrow-down-double-line resume__button-link"></i>
+                    </span>
+                    <ul id="list3" class="resume__data-ul">
+                      <li class="resume__data-li">
+                        Développement d'une nouvelle fonctionnalité dans l'ERP
+                        "Dynamics 365 F&O", pour récupérer les résultat des
+                        traitement par lot par l'ESB "Magic" avec le langage X++
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <h2 class="resume__title">
+                    <i class="ri-arrow-drop-right-line"></i>
+                    Conception et réalisation de quatre drones multirotor (quad
+                    copter)
+                  </h2>
+
+                  <div class="resume__data">
+                    <span>
+                      <i class="ri-map-pin-line"></i>
+                      FRDISI | Casablanca - Maroc / 07/2019 - 09/2019
+                    </span>
+                    <span
+                      class="resume__button-link"
+                      onclick="toggleList('list4', 'icon4')">
+                      Réalisations
+                      <i
+                        id="icon4"
+                        class="ri-arrow-down-double-line resume__button-link"></i>
+                    </span>
+                    <ul id="list4" class="resume__data-ul">
+                      <li class="resume__data-li">
+                        Conception et réalisation de solutions drone pour
+                        l'inspection des lignes haute tension et pour des
+                        missions de cartographie
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </section>
 
-            <div class="resume__left">
-               <!--==================== ABOUT ====================-->
-               <section class="about section" id="about">
-                  <h2 class="section__title">PERSONAL INFO</h2>
+            <!--==================== PROJECTS ====================-->
+            <section class="projects section">
+              <h2 class="section__title">PROJECTS</h2>
 
-                  <div class="about__container grid">
-                     <p>
-                        Hi, I'm Anne Evone, based in Lima - Perú, I do 
-                        custom work and do market research before starting 
-                        any project, giving you a fair advantage in 
-                        delivering the best outcome for the client.
-                     </p>
-                     
-                     <a href="assets/pdf/Anne-CV.pdf" download="" class="about__button">
-                        Download CV <i class="ri-download-line"></i>
-                     </a>
-                     
-                     <ul class="about__social">
-                        <li><a href="https://github.com/" class="about__social-link">Github</a></li>
-                        <li><a href="https://dribbble.com/" class="about__social-link">Dribbble</a></li>
-                        <li><a href="https://www.linkedin.com/" class="about__social-link">Linkedin</a></li>
-                     </ul>
+              <div class="projects__container grid">
+                <div>
+                  <h2 class="resume__title">
+                    <i class="ri-arrow-drop-right-line"></i>
+                    Développement d'une plateforme GMAO incluant la solution
+                    NAVVIS INDOOR VIEWER, basé sur les protocoles MQTT et RTSP.
+                  </h2>
+
+                  <div class="resume__data">
+                    <span>10/2020 - 07/2021</span>
+                    <span>
+                      <ul>
+                        <li class="resume__data-li">
+                          La plateforme développé en React JS backend en Node JS
+                        </li>
+                        <li class="resume__data-li">
+                          L'échange entre les capteurs "Bosch XDK " et le
+                          serveur de l'application par MQTT, le flux des caméras
+                          est assuré par le protocole RTSP.
+                        </li>
+                      </ul>
+                    </span>
                   </div>
-               </section>
-      
-               <!--==================== SKILLS ====================-->
-               <section class="skills section" id="skills">
-                  <h2 class="section__title">SKILSS</h2>
+                </div>
 
-                  <div class="skills__container">
-                     <div class="skills__content">
-                        <ul class="skills__list">
-                           <li class="resume__title">
-                              <i class="ri-arrow-drop-right-line"></i> HTML & CSS
-                           </li>
-                           <li class="resume__title">
-                              <i class="ri-arrow-drop-right-line"></i> Javascript
-                           </li>
-                           <li class="resume__title">
-                              <i class="ri-arrow-drop-right-line"></i> React
-                           </li>
-                           <li class="resume__title">
-                              <i class="ri-arrow-drop-right-line"></i> Git & Github
-                           </li>
-                        </ul>
+                <div>
+                  <h2 class="resume__title">
+                    <i class="ri-arrow-drop-right-line"></i>
+                    Développement d'une borne de mesure de température frontale
+                    et de distribution gel hydroalcoolique
+                  </h2>
 
-                        <ul class="skills__list">
-                           <li class="resume__title">
-                              <i class="ri-arrow-drop-right-line"></i> Boostrap
-                           </li>
-                           <li class="resume__title">
-                              <i class="ri-arrow-drop-right-line"></i> Figma
-                           </li>
-                        </ul>
-                     </div>
+                  <div class="resume__data">
+                    <span>05/2020 - 07/2020</span>
+                    <span>
+                      <ul>
+                        <li class="resume__data-li">
+                          Une borne fixe basée sur le micro-contrôleur est
+                          esp8266 et le capteur de température MLX90614 pour la
+                          mesure de temperature frontale et distribution du gel
+                          hydroalcoolique.
+                        </li>
+                      </ul>
+                    </span>
                   </div>
-               </section>
-      
-               <!--==================== EDUCATION ====================-->
-               <section class="education section" id="education">
-                  <h2 class="section__title">EDUCATION</h2>
+                </div>
 
-                  <div class="education__container grid">
-                     <div>
-                        <h2 class="resume__title">
-                           <i class="ri-arrow-drop-right-line"></i> Master In Web Developer
-                        </h2>
+                <div>
+                  <h2 class="resume__title">
+                    <i class="ri-arrow-drop-right-line"></i>
+                    Programmation d'un model dynamique de drone VTOL (quad
+                    copter).
+                  </h2>
 
-                        <div class="resume__data">
-                           <span>Perú - University</span>
-                           <span>2012 - 2017</span>
-
-                           <a href="assets/pdf/college-degree.pdf" target="_blank" class="resume__button-link">
-                              View <i class="ri-external-link-line"></i>
-                           </a>
-                        </div>
-                     </div>
-                     <div>
-                        <h2 class="resume__title">
-                           <i class="ri-arrow-drop-right-line"></i> Fontend Developer
-                        </h2>
-
-                        <div class="resume__data">
-                           <span>Spain - University</span>
-                           <span>2017 - 2022</span>
-
-                           <a href="assets/pdf/college-degree.pdf" target="_blank" class="resume__button-link">
-                              View <i class="ri-external-link-line"></i>
-                           </a>
-                        </div>
-                     </div>
-                     <div>
-                        <h2 class="resume__title">
-                           <i class="ri-arrow-drop-right-line"></i> Graphic Designer
-                        </h2>
-
-                        <div class="resume__data">
-                           <span>Perú - Institute</span>
-                           <span>2019 - 2023</span>
-
-                           <a href="assets/pdf/college-degree.pdf" target="_blank" class="resume__button-link">
-                              View <i class="ri-external-link-line"></i>
-                           </a>
-                        </div>
-                     </div>
+                  <div class="resume__data">
+                    <span>09/2019 - 12/2019</span>
+                    <span>
+                      <ul>
+                        <li class="resume__data-li">
+                          Fuselage imprimé en ABS et renforcé en fibre de verre
+                          basé sur la plateforme open source PIXHAWK 4 cube.
+                        </li>
+                      </ul>
+                    </span>
                   </div>
-               </section>
-            </div>
+                </div>
+              </div>
+            </section>
+          </div>
 
-            <div class="resume__right">
-               <!--==================== WORK ====================-->
-               <section class="work section" id="work">
-                  <h2 class="section__title">WORK EXPERIENCE</h2>
+          <div class="resume__right">
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+              <h2 class="section__title">SKILSS</h2>
 
-                  <div class="work__container grid">
-                     <div>
-                        <h2 class="resume__title">
-                           <i class="ri-arrow-drop-right-line"></i> Web Developer Director
-                        </h2>
+              <div class="skills__container">
+                <div class="skills__content">
+                  <ul class="skills__list">
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      C++
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      Python
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      Micro Python
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      JavaScript
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      C Arduino
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      PHP
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      Laravel
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      React Native
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      Raspberry Pi
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      ESP8266
+                    </li>
+                  </ul>
+                  <ul class="skills__list">
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      Azure
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      Hub
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      MQTT
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      OracleSQL
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      MySQL
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      PostgreSQL
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      HTML5
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      CSS3
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      Bootstrap4
+                    </li>
+                  </ul>
+                  <ul class="skills__list">
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      jQuery
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      SEO
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      Linux
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      ROS
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      Gazebo
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      ESP32
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      Arduino
+                    </li>
 
-                        <div class="resume__data">
-                           <span>Adobe - Spain / 2012 - 2017</span>
-
-                           <p>
-                              I worked in the company providing experience 
-                              in the labor field and doing quality work.
-                           </p>
-                        </div>
-                     </div>
-
-                     <div>
-                        <h2 class="resume__title">
-                           <i class="ri-arrow-drop-right-line"></i> Design Manager
-                        </h2>
-
-                        <div class="resume__data">
-                           <span>Figma - Perú / 2020 - 2022</span>
-
-                           <p>
-                              I worked in the company providing experience 
-                              in the labor field and doing quality work.
-                           </p>
-                        </div>
-                     </div>
-
-                     <div>
-                        <h2 class="resume__title">
-                           <i class="ri-arrow-drop-right-line"></i> Software Engineer
-                        </h2>
-
-                        <div class="resume__data">
-                           <span>Adobe - Spain / 2012 - 2017</span>
-
-                           <p>
-                              I worked in the company providing experience 
-                              in the labor field and doing quality work.
-                           </p>
-                        </div>
-                     </div>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      STM32
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      Pixhawk
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <!--==================== Languages ====================-->
+            <section class="languages section" id="languages">
+              <h2 class="section__title">LANGUES</h2>
+              <ul class="languages__list">
+                <li class="languages__list-text">
+                  <div class="resume__title">
+                    <i class="ri-arrow-drop-right-line"></i>
+                    Arabe
                   </div>
-               </section>
-      
-               <!--==================== CERTIFICATES ====================-->
-               <section class="certificates section">
-                  <h2 class="section__title">CERTIFICATES</h2>
-
-                  <div class="certificates__container grid">
-                     <div>
-                        <h2 class="resume__title">
-                           <i class="ri-arrow-drop-right-line"></i> Modern Web Development
-                        </h2>
-
-                        <div class="resume__data">
-                           <span>Master Web Inc -  2015</span>
-
-                           <a href="assets/pdf/certificate.pdf" target="_blank" class="resume__button-link">
-                              View <i class="ri-external-link-line"></i>
-                           </a>
-                        </div>
-                     </div>
-
-                     <div>
-                        <h2 class="resume__title">
-                           <i class="ri-arrow-drop-right-line"></i> Component Design
-                        </h2>
-
-                        <div class="resume__data">
-                           <span>Design & Company -  2020</span>
-
-                           <a href="assets/pdf/certificate.pdf" target="_blank" class="resume__button-link">
-                              View <i class="ri-external-link-line"></i>
-                           </a>
-                        </div>
-                     </div>
-
-                     <div>
-                        <h2 class="resume__title">
-                           <i class="ri-arrow-drop-right-line"></i> Layout Of Structural Websites
-                        </h2>
-
-                        <div class="resume__data">
-                           <span>University of Peru -  2022</span>
-
-                           <a href="assets/pdf/certificate.pdf" target="_blank" class="resume__button-link">
-                              View <i class="ri-external-link-line"></i>
-                           </a>
-                        </div>
-                     </div>
+                  <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </li>
+                <li class="languages__list-text">
+                  <div class="resume__title">
+                    <i class="ri-arrow-drop-right-line"></i>
+                    Français
                   </div>
-               </section>
-      
-               <!--==================== REFERENCES ====================-->
-               <section class="references section">
-                  <h2 class="section__title">REFERENCES</h2>
+                  <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                </li>
 
-                  <div class="references__container grid">
-                     <div>
-                        <h2 class="resume__title">
-                           <i class="ri-arrow-drop-right-line"></i> Ris Allison
-                        </h2>
-
-                        <div class="resume__data">
-                           <span>CEO Industria Inc</span>
-                           <span>user@email.com / 987-654-3210</span>
-                        </div>
-                     </div>
-
-                     <div>
-                        <h2 class="resume__title">
-                           <i class="ri-arrow-drop-right-line"></i> Edyson Harris
-                        </h2>
-
-                        <div class="resume__data">
-                           <span>CEO Industria Inc</span>
-                           <span>user@email.com / 987-654-3210</span>
-                        </div>
-                     </div>
-
-                     <div>
-                        <h2 class="resume__title">
-                           <i class="ri-arrow-drop-right-line"></i> Anne Lort
-                        </h2>
-
-                        <div class="resume__data">
-                           <span>CEO Industria Inc</span>
-                           <span>user@email.com / 987-654-3210</span>
-                        </div>
-                     </div>
+                <li class="languages__list-text">
+                  <div class="resume__title">
+                    <i class="ri-arrow-drop-right-line"></i>
+                    Anglais
                   </div>
-               </section>
-            </div>
-         </main>
-   
-         <!--==================== FOOTER ====================-->
-         <footer class="footer">
-            <div class="footer__container grid">
-               <div>
-                  <h3 class="footer__title">PHONE</h3>
-                  <span class="footer__info">(0+) 987-654-321</span>
-               </div>
+                  <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                </li>
+              </ul>
+            </section>
+            <!--==================== hobbies ====================-->
+            <section class="hobbies section" id="hobbies">
+              <h2 class="section__title">HOBBIES</h2>
 
-               <div>
-                  <h3 class="footer__title">EMAIL</h3>
-                  <span class="footer__info">anne@email.com</span>
-               </div>
+              <div class="skills__container">
+                <div class="skills__content">
+                  <ul class="skills__list">
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      Basket-ball
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      Bricolage
+                    </li>
+                  </ul>
+                  <ul class="skills__list">
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      Guitare
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      Tir à l'arc
+                    </li>
+                  </ul>
+                  <ul class="skills__list">
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      Equitation
+                    </li>
+                    <li class="resume__title">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      Pilotage Drone
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <!--==================== EDUCATION ====================-->
+            <section class="education section" id="education">
+              <h2 class="section__title">EDUCATION</h2>
 
-               <div>
-                  <h3 class="footer__title">WEBSITE</h3>
-                  <a href="#" target="_blank" class="footer__link">www.mywebsite.com</a>
-               </div>
-            </div>
-         </footer>
-      </div>
+              <div class="education__container grid">
+                <div>
+                  <h2 class="resume__title">
+                    <i class="ri-arrow-drop-right-line"></i>
+                    Ingénieur d'état En Informatique
+                  </h2>
 
-      <!--========== SCROLL UP ==========-->
-      <a href="#" class="scrollup" id="scroll-up">
-         <i class="ri-arrow-up-line"></i>
-      </a>
+                  <div class="resume__data">
+                    <span>
+                      ENSEM | École Nationale Supérieure d’Electricité et
+                      Mécanique
+                    </span>
+                    <span>Casablanca - Maroc</span>
+                    <span>09/2018 - 07/2021</span>
 
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-   </body>
+                    <a href="#" target="_blank" class="resume__button-link">
+                      View
+                      <i class="ri-external-link-line"></i>
+                    </a>
+                  </div>
+                </div>
+                <div>
+                  <h2>
+                    <span class="resume__title-dimploma">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      Licence Sciences et techniques -LST-
+                    </span>
+                    <span class="resume__title-dimploma">
+                      <i class="ri-arrow-drop-right-line"></i>
+                      Diplômé des études universitaires et militaires -DEUM-
+                    </span>
+                  </h2>
+
+                  <div class="resume__data">
+                    <span>ARM | Académie Royale Militaire</span>
+                    <span>Meknès - Maroc</span>
+                    <span>08/2006 - 07/2010</span>
+
+                    <a href="#" target="_blank" class="resume__button-link">
+                      View
+                      <i class="ri-external-link-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+        <div class="footer__container grid">
+          <div>
+            <h3 class="footer__title">TELEPHONE</h3>
+            <a
+              href="https://wa.me/212600587923"
+              class="footer__link"
+              target="_blank">
+              WhatsApp +212 6.00.58.79.23
+            </a>
+          </div>
+
+          <div>
+            <h3 class="footer__title">CONTACT PRO</h3>
+            <a
+              href="https://www.linkedin.com/in/mohammed-zraib"
+              class="footer__link"
+              target="_blank">
+              linkedin.com/in/mohammed-zraib
+            </a>
+          </div>
+
+          <div>
+            <h3 class="footer__title">EMAIL</h3>
+            <a
+              href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=zraib.med@gmail.com"
+              class="footer__link"
+              target="_blank">
+              zraib.med@gmail.com
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
