@@ -73,6 +73,7 @@ ul {
 
 a {
   text-decoration: none;
+  text-wrap: wrap;
 }
 
 img {
@@ -243,7 +244,7 @@ body.dark-theme {
     box-shadow: 0 4px 24px hsla(234, 50%, 4%, 0.25);
     margin-inline: 1.5rem;
     border-radius: 0.5rem;
-    padding: 1.25rem 3rem;
+    padding: 1.25rem 1.25rem;
     transition: background 0.4s;
   }
 }
@@ -284,7 +285,8 @@ body.dark-theme {
 
 /*=============== HOME ===============*/
 .home__container {
-  padding-top: 7.5rem;
+  height: 40rem;
+  padding-top: 5rem;
   text-align: center;
   row-gap: 0;
 }
@@ -340,6 +342,9 @@ body.dark-theme {
 .about {
   height: max-content;
 }
+.about {
+  padding-inline: 1.5rem;
+}
 .about__button {
   width: max-content;
   color: var(--title-color);
@@ -379,7 +384,7 @@ body.dark-theme {
 .skills__content {
   grid-template-columns: repeat(3, max-content);
   align-items: baseline;
-  column-gap: 3rem;
+  column-gap: 0.5rem;
 }
 
 .skills__list {
@@ -398,7 +403,7 @@ body.dark-theme {
   margin-bottom: 10px; /* Adjust margin as needed */
 }
 .languages__list {
-  padding-right: 12rem;
+  padding-right: 6rem;
 }
 
 .stars {
@@ -506,15 +511,10 @@ body.dark-theme {
   .nav__menu {
     padding-inline: 2rem;
   }
-
-  .skills__content {
-    grid-template-columns: max-content;
-    row-gap: 1rem;
-  }
-
   .footer__container {
     grid-template-columns: max-content;
     row-gap: 1.5rem;
+    padding-bottom: 5rem;
   }
 }
 
@@ -668,7 +668,17 @@ body.dark-theme {
     justify-content: center;
     align-items: center;
   }
-
+  .skills__content {
+    grid-template-columns: repeat(3, max-content);
+    align-items: baseline;
+    column-gap: 3rem;
+  }
+  .languages__list {
+    padding-right: 12rem;
+  }
+  .skills__list {
+    row-gap: 0.5rem;
+  }
   .footer__container {
     margin-inline: 1.5rem;
     padding-top: 2rem;
